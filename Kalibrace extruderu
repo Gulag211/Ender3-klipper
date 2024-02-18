@@ -24,13 +24,13 @@ max_temp: 280
 #Zajímá nás hodnota na řádku 11
 #Výpočet je jednoduchý
 #Je potřeba vynásobit stávající počet kroků stonásobkem, tedy
-# 22.28 x 100
+# 22.28*100
 # budedme potřebovat na původních krocích vytlačit a nějaké množství materialu, zpravidla 100mm
 # Před započetím vytlačování si udeláme značku na filamentu od vstupu do extruderu ve vzdálonosti 100mm a jestě dvě dalsí pro kontrolu ve vzdálenosti 110mm a 120mm
 #vytlačíme filament pomocí příkazu 
-#Poté změríme jaká skutečná délka vytlačeného materiálu
+#Poté změríme jaká je skutečná délka vytlačeného materiálu
 #Extruder měl vytlačit 100mm, ale vytlačil jen 88mm
 #Úprava kroků proběhne tedy výpočtem
-#22.28x100=2228(kroků)/100+12(tedy těch nevytlačených 12mm) a dostaneme kroky nové, které přepíšeme v řádku 11 mého příkladu
+#22.28*100=2228(kroků)/100+12(tedy těch nevytlačených 12mm) a dostaneme kroky nové, které přepíšeme v řádku 11 mého příkladu
 #takže 22.28*100=2228/112=19.89
 #V případě vytlačení více materiálu od hodnoty 100mm odečítáme materiál vytlačený navíc
