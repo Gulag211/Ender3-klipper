@@ -1,4 +1,4 @@
-#Kalibrace extruderu ve firmware klipper je uplně odlišný od firmware marlin a proto se pokusím vysvetlit jak na ni.
+#Kalibrace extruderu ve firmware klipper je uplně odlišná od firmware marlin a proto se pokusím vysvetlit jak na ni.
 #Ve složce printer.cfg v řádku [extruder] je hodnota kroků, kterou budeme měnit
 #Tady je příklad mého extruderu
 
@@ -8,7 +8,7 @@ step_pin: PB3
 dir_pin: PB4
 enable_pin: !PD1
 microsteps: 16
-rotation_distance: 22.28
+rotation_distance: 22.28. #Kroky motoru extruderu 
 nozzle_diameter: 0.400
 filament_diameter: 1.750
 heater_pin: PC8
@@ -25,7 +25,7 @@ max_temp: 280
 #Výpočet je jednoduchý
 #Je potřeba vynásobit stávající počet kroků stonásobkem, tedy
 # 22.28*100
-# budedme potřebovat na původních krocích vytlačit a nějaké množství materialu, zpravidla 100mm
+# budedme potřebovat na původních krocích vytlačit nějaké množství materialu, zpravidla 100mm
 # Před započetím vytlačování si udeláme značku na filamentu od vstupu do extruderu ve vzdálonosti 100mm a jestě dvě dalsí pro kontrolu ve vzdálenosti 110mm a 120mm
 #vytlačíme filament pomocí příkazu 
 #Poté změríme jaká je skutečná délka vytlačeného materiálu
