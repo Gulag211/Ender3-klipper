@@ -27,7 +27,7 @@ max_temp: 280
 # 22.28*100
 # budedme potřebovat na původních krocích vytlačit nějaké množství materialu, zpravidla 100mm
 # Před započetím vytlačování si udeláme značku na filamentu od vstupu do extruderu ve vzdálonosti 100mm a jestě dvě dalsí pro kontrolu ve vzdálenosti 110mm a 120mm
-#vytlačíme filament pomocí příkazu 
+#vytlačíme filament pomocí příkazu ( G1 E100 F150 )
 #Poté změríme jaká je skutečná délka vytlačeného materiálu
 #Extruder měl vytlačit 100mm, ale vytlačil jen 88mm
 #Úprava kroků proběhne tedy výpočtem
