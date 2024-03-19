@@ -1,0 +1,51 @@
+Stručný navod na na kalibraci PID trysky a bedu.
+Jako první provedeme home a najedeme si tryskou nekam do prostoru
+pár centimetrů od podložky. 
+Já tiskárnu nahřívám aby byla kalibrace rychlejší a zbytečně se necekalo
+na nahřátí bedu. Nahřátí provedu ještě před home.
+Poté přistoupíme k samotnému PID ladění.
+Do konzole si nakopírujeme příkaz níže a odešlete šipkou, nebo potvrďte
+enter
+
+
+#####################################################################
+      PID_CALIBRATE HEATER=extruder TARGET=200 
+#####################################################################
+
+
+TARGET=200 je teplota, která se bude ladit.
+Jinými slovy, pokud budu chtít ladit na ABS, tak si upravím
+TARGET=200 na TARGET=250 
+
+Po ukončení ladění (kalibrace) se v konzole vypíše stav kalibrave a
+naměřené hodnoty
+Tyto hodnoty si uložíme odesláním prikazu uvedeného níže, pro uložení
+do naší konfigurace ve složce (printer.cfg)
+
+
+#####################################################################
+       SAVE_CONFIG
+#####################################################################
+
+
+Kalibraci PID podložky provedeme stejně, jen s jiným příkazem
+
+
+####################################################################
+       PID_CALIBRATE HEATER=heater_bed TARGET=60
+####################################################################
+
+
+Stejným způsobem si upravíme TARGET=60 na hodnotu kterou chceme, nebo
+používáme nejčastěji.
+Po dokončení a vypsání hodnot si vše opět uložíme příkazem
+
+
+####################################################################
+       SAVE_CONFIG
+####################################################################
+
+
+To je z kalibrace PID vše
+Tisku zdar 😏
+
