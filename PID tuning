@@ -1,10 +1,11 @@
 Stručný navod na na kalibraci PID trysky a bedu.
-Jako první provedeme home a najedeme si tryskou nekam do prostoru
-pár centimetrů od podložky. 
-Já tiskárnu nahřívám aby byla kalibrace rychlejší a zbytečně se necekalo
-na nahřátí bedu. Nahřátí provedu ještě před home.
-Poté přistoupíme k samotnému PID ladění.
-Do konzole si nakopírujeme příkaz níže a odešlete šipkou, nebo potvrďte
+Jako první proveď home a najeď si tryskou nekam do prostoru
+pár centimetrů nad podložku. 
+Já tiskárnu nahřívám hned, aby byla kalibrace rychlejší a zbytečně se nečekalo
+na nahřátí bedu.
+Nahřátí provedu ještě před home.
+Poté přistoupíš k samotnému PID ladění.
+Do konzole si nakopíruj příkaz níže mezi ##  a odešli šipkou, nebo potvrď
 enter
 
 
@@ -19,8 +20,8 @@ TARGET=200 na TARGET=250
 
 Po ukončení ladění (kalibrace) se v konzole vypíše stav kalibrave a
 naměřené hodnoty
-Tyto hodnoty si uložíme odesláním prikazu uvedeného níže, pro uložení
-do naší konfigurace ve složce (printer.cfg)
+Tyto hodnoty si ulož odesláním prikazu uvedeného níže, pro uložení
+do tvé konfigurace ve složce (printer.cfg)
 
 
 #####################################################################
@@ -28,7 +29,7 @@ do naší konfigurace ve složce (printer.cfg)
 #####################################################################
 
 
-Kalibraci PID podložky provedeme stejně, jen s jiným příkazem
+Kalibraci PID podložky proveď stejně, jen s jiným příkazem
 
 
 ####################################################################
@@ -36,9 +37,9 @@ Kalibraci PID podložky provedeme stejně, jen s jiným příkazem
 ####################################################################
 
 
-Stejným způsobem si upravíme TARGET=60 na hodnotu kterou chceme, nebo
-používáme nejčastěji.
-Po dokončení a vypsání hodnot si vše opět uložíme příkazem
+Stejným způsobem si uprav TARGET=60 na hodnotu kterou chceš, nebo
+používáš nejčastěji.
+Po dokončení a vypsání hodnot si vše opět ulož příkazem
 
 
 ####################################################################
